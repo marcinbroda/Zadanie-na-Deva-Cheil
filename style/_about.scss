@@ -1,0 +1,136 @@
+.about{
+
+	@include desktop{
+		max-width: 1076px;
+		margin:0 auto;
+	}
+	
+	.about__container{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 0 25px;
+		margin-top: 50px;
+
+		@include desktop{
+			flex-direction: row;
+			padding-bottom: 50px;
+		}
+
+		.about__container--row{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+
+			@include desktop{
+				padding: 0 20px;
+			}
+
+			.about__border--img{
+				position: relative;
+				margin: 0 auto;
+				margin-bottom: 30px;
+
+				&::before{
+					content:"";
+					position: relative;
+					display: block;
+					width: 80px;
+					height: 80px;
+					border: 1px solid rgb(232, 227, 227);
+					border-radius: 2px;
+					transition: 1s  ease;
+
+				@include desktop{
+					width: 60px;
+					height: 60px;
+					}
+					
+				}
+
+				@include desktop{
+					width: 60px;
+					height: 60px;
+
+					&:hover::before{
+						border: 1px solid #e74c3c;
+						transform: rotateZ(-45deg);
+						transition: 1s  ease;
+					}
+
+					&:hover + .about__hover--title3{
+						color:  #e74c3c;
+					}
+					
+				}
+
+				.about__img{
+					position: absolute;
+					display: block;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					top: 50%;
+					z-index: 9;
+				}
+			
+				.img__infin{
+					background: url(../img/infin.png);
+					background-repeat: no-repeat;
+					width: 28px;
+					height: 15px;
+				}
+
+				.img__heart{
+					background: url(../img/heart.png);
+					background-repeat: no-repeat;
+					width: 22px;
+					height: 20px;
+				}
+
+				.img__light{
+					background: url(../img/light.png);
+					background-repeat: no-repeat;
+					width: 18px;
+					height: 26px;
+				}
+
+				.img__dialog{
+					background: url(../img/dialog.png);
+					background-repeat: no-repeat;
+					width: 22px;
+					height: 28px;
+				}
+			}
+			
+				.about__hover--title3{
+					font-size: 1.2rem;
+					text-align: center;
+					text-transform: uppercase;
+					color: rgba(0, 0, 0, 0.54);
+				}
+
+				.about__cover--separate{
+					margin-top: 10px;
+					margin-bottom: 10px;
+					.about__cover--separate-img{
+						background: url(../img/span.png);
+						background-repeat: no-repeat;
+						width: 80px;
+						height: 5px;
+						display: block;
+						margin: 0 auto;
+					}
+				}
+
+				.about__container--text{
+					padding-bottom: 40px;
+					color: #a6a6a6;
+
+					@include desktop{
+						font-size: .7rem;
+					}
+			}
+		}
+	}
+}

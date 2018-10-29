@@ -1,0 +1,16 @@
+body{
+	background-color:#fff;
+	overflow-x:hidden;
+	position: relative;
+
+	/* @include desktop{
+		width: 1024px;
+		margin: 0 auto;
+	} */
+}
+
+html{
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
