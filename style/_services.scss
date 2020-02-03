@@ -1,0 +1,167 @@
+.services .services__container{
+		
+		background-color:#000; 
+
+		@include desktop{
+				max-width: 1076px;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: row;
+				
+			}
+
+		.services__content{
+			width: 100%;
+			padding-top: 50px;
+
+			@include desktop{
+				width: 50%;
+			}
+
+			.services__conetent--head{
+				font-size: 2rem;
+				text-align: right;
+				padding: 0px 40px;
+				border-right: 6px solid #e74c3c; 
+				padding-right: 5%;
+				margin-bottom: 50px;
+				margin-right: 40px;
+				margin-top: 40px;
+				color: #fff;
+
+				@include desktop{
+					margin-right: 0;	
+					
+				}
+			}
+
+			.services__content--collumn{
+				margin-bottom: 40px;
+				position: relative;
+				margin-right: 50px;
+
+				@include desktop{
+					margin-right: 0;
+					padding: 0;
+					padding-right: 100px;
+					
+
+				}
+
+				.content__left--head{
+					text-align: left;
+					margin-left: 50px;
+					@include desktop{
+						text-align: right;
+					}
+				}
+				.content-left--text{
+					text-align: left;
+					padding-left: 40px;
+					@include desktop{
+						text-align: right;
+					}
+				}
+				.content-left--icon{
+					left: 40px;
+					@include desktop{
+						text-align: right;
+					}
+				}
+
+
+				h3{
+					font-size: 1.5rem;
+					text-transform: uppercase;
+					text-align: right;
+					padding-bottom: 60px;
+					color: #e74c3c;
+
+					@include desktop{
+						padding-bottom: 30px;
+					}
+
+				}
+				p{
+					text-align: right;
+					padding-bottom: 30px;
+					line-height: 2rem;
+					color: #fff;
+					padding-left: 40px;
+					font-size: 1.1rem;
+
+					@include desktop{
+						padding-left: 0px;
+
+					}
+
+				}
+				.services__icon{
+					position: absolute;
+					right: 0px;
+					top: 35px ;
+					
+					@include desktop{
+						right: -100px;
+						right: 0px;
+						top: 0 ;
+						}
+					i{
+					background: #f4f5f9;
+				    width: 40px;
+				    height: 40px;
+				    line-height: 45px;
+				    text-align: center;
+				    color: #e74c3c;
+				    position: relative;
+				    z-index: 9;
+				    border: 5px solid rgba(0,0,0,0.2);
+				    border-radius: 50%;
+				    font-size: 1.875rem;
+
+				    	@include desktop{
+							width: 70px;
+				    		height: 70px;
+				    		line-height: 70px;
+						}
+
+					}
+
+				}		
+
+			}
+		}
+
+
+
+
+		.services__img{
+			width: 100%;
+			
+			@include desktop{
+				width: 50%;
+				margin:auto;
+			}
+
+			.services__img--figure{
+				height: 367px;
+				
+				@include desktop{
+					height: 676px;
+				}	
+
+				
+
+				img{
+					width: 100%;
+					height: 100%;
+					float: right;
+
+
+					@include desktop{
+						width: 90%;
+					}
+				}
+			}
+		}
+}

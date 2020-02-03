@@ -28,19 +28,20 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<header class="header">
+	<header id="home" class="header">
 		<div class="header__container">
 			<nav class="header__nav">
 				<ul class="nav__list">
-					  <li><a class="nav__list--links" href="#">Home</a></li>
-					  <li><a class="nav__list--links" href="#">About us</a></li>
-					  <li><a class="nav__list--links" href="#">Portfolio</a></li>
-					  <li><a class="nav__list--links" href="#">Pricing</a></li>
-					  <li><a class="nav__list--links" href="#">Team</a></li>
-					  <li><a class="nav__list--links" href="#">Blog</a></li>
-					  <li><a class="nav__list--links nav__list--lastchild" href="#">Contact</a></li>
+					  <li><a class="nav__list--links" href="#home">Home</a></li>
+					  <li><a class="nav__list--links" href="#about">About us</a></li>
+					  <li><a class="nav__list--links" href="#services">Services</a></li>
+					  <li><a class="nav__list--links" href="#portfolio">Portfolio</a></li>  
+					  <li><a class="nav__list--links" href="#team">Team</a></li>
+					  <li><a class="nav__list--links" href="#blog">Blog</a></li>
+					  <li><a class="nav__list--links nav__list--lastchild" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<div class="nav__cover"></div>
@@ -61,8 +62,9 @@
 					<p class="slider__content--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eos.</p>
 					<p class="slider__content--textspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis hic commodi tenetur ea ad aliquam harum eum sint rem.</p>
 					<div class="slider__container">
-						<a href="#" class="slider__container-link slider__container--started">Get Started Now</a>
-						<a class="slider__container-link slider__container--learn" href="#">Learn More</a>
+						<a href="#about" class="slider__container-link slider__container--started">Get Started Now</a>
+						<a class="slider__container-link slider__container--learn" href="#portfolio">Learn More</a>
+						
 					</div>
 				</div>
 				<img class="header__img" src="./img/baloons-pc.jpg" alt="ballons">
@@ -75,8 +77,8 @@
 					<p class="slider__content--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eos.</p>
 					<p class="slider__content--textspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis hic commodi tenetur ea ad aliquam harum eum sint rem.</p>
 					<div class="slider__container">
-						<a href="#" class="slider__container-link slider__container--started">Get Started Now</a>
-						<a class="slider__container-link slider__container--learn" href="#">Learn More</a>
+						<a  class="slider__container-link slider__container--started" href="#services">Get Started Now</a>
+						<a class="slider__container-link slider__container--learn" href="#portfolio">Learn More</a>
 					</div>
 				</div>
 				<img class="header__img" src="./img/forest-pc.jpg" alt="forest">
@@ -89,8 +91,8 @@
 					<p class="slider__content--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eos.</p>
 					<p class="slider__content--textspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis hic commodi tenetur ea ad aliquam harum eum sint rem.</p>
 					<div class="slider__container">
-						<a href="#" class="slider__container-link slider__container--started">Get Started Now</a>
-						<a class="slider__container-link slider__container--learn" href="#">Learn More</a>
+						<a href="#services" class="slider__container-link slider__container--started">Get Started Now</a>
+						<a class="slider__container-link slider__container--learn" href="#portfolio">Learn More</a>
 					</div>
 				</div>
 				<img class="header__img" src="./img/mountains-pc.jpg" alt="mountains">
@@ -104,8 +106,8 @@
 		</div>
 	</div>
 	</header>
-	<section class="about">
-		<div class="about__container">
+	<section  class="about">
+		<div id="about" class="about__container">
 			<div class="about__container--row">
 				<div class="about__border--img">
 					<span class="about__img img__infin"></span>
@@ -145,6 +147,105 @@
 					<span class="about__cover--separate-img"></span>
 				</div>
 				<p class="about__container--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ipsam fugiat officia tenetur minima.</p>
+			</div>
+		</div>
+	</section>
+	<section id="services"  class="services">
+		<div class="services__container">
+			<div class="services__content">
+				<h2 class="services__conetent--head">
+					OUR SERVICES
+				</h2>
+				<div class="services__content--collumn">
+					<h3>Web Design</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.</p>
+					<figure class="services__icon">
+						<i class="fa fa-heart"></i>
+					</figure>
+				</div>
+				<div class="services__content--collumn">
+					<h3 class="content__left--head">Web Design</h3>
+					<p class="content-left--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.</p>
+					<figure class="services__icon content-left--icon">
+						<i class="fa fa-heart "></i>
+					</figure>
+				</div>
+				<div class="services__content--collumn">
+					<h3>Web Design</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.</p>
+					<figure class="services__icon">
+						<i class="fa  fa-heart"></i>
+					</figure>
+				</div>
+			</div>
+			<div class="services__img">
+				<figure class="services__img--figure">
+					<img src="./img/servicerightimg.jpg">
+				</figure>
+			</div>
+		</div>		
+	</section>
+	<section id="portfolio" class="recentWorks">
+		<div class="recentWorks__text">
+			<h2>Recent Works</h2>
+			<p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
+			<span class="separator"></span>
+		</div> 
+		<div class="recentWorks__container">
+			<ul>	
+				<li class="category_item" id="all">All</li>
+				<li class="category_item" id="web">Web Design</li>
+				<li class="category_item" id="art">Art</li>
+				<li class="category_item" id="print">Print Design</li>
+				<li class="category_item" id="animation">Animation</li>		
+				<li class="category_item" id="photography">Photography</li>
+				<li class="category_item" id="video">Video</li>
+			</ul>
+			<div class="recentWorks_container--content">	
+				<div class="recentWorks__container--portfolio">
+					<figure class="recentWorks__img--figure all animation">
+						<img src="./img/pf1.jpg">
+						<div class="recentWorks__container--overlay">
+							<h3>T-shirt Design</h3>
+							<p>art / t-shirt</p>
+						</div>
+					</figure>
+					<figure class="recentWorks__img--figure all web video">
+						<img src="./img/pf2.jpg">
+						<div class="recentWorks__container--overlay">
+							<h3>T-shirt Design</h3>
+							<p>art / t-shirt</p>
+						</div>
+					</figure>
+					<figure class="recentWorks__img--figure all animation">
+						<img src="./img/pf3.jpg">
+						<div class="recentWorks__container--overlay">
+							<h3>T-shirt Design</h3>
+							<p>art / t-shirt</p>
+						</div>
+					</figure>
+					<figure class="recentWorks__img--figure all web print">
+						<img src="./img/pf4.jpg">
+						<div class="recentWorks__container--overlay">
+							<h3>T-shirt Design</h3>
+							<p>art / t-shirt</p>
+						</div>
+					</figure>
+					<figure class="recentWorks__img--figure all photography">
+						<img src="./img/pf7.jpg">
+						<div class="recentWorks__container--overlay">
+							<h3>T-shirt Design</h3>
+							<p>art / t-shirt</p>
+						</div>
+					</figure>
+					<figure class="recentWorks__img--figure all art print">
+						<img src="./img/pf5.jpg">
+						<div class="recentWorks__container--overlay">
+							<h3>T-shirt Design</h3>
+							<p>art / t-shirt</p>
+						</div>
+					</figure>
+				</div>	
 			</div>
 		</div>
 	</section>
