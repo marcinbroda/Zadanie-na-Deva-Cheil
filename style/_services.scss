@@ -40,6 +40,8 @@
 				position: relative;
 				margin-right: 50px;
 
+				
+
 				@include desktop{
 					margin-right: 0;
 					padding: 0;
@@ -74,7 +76,7 @@
 					font-size: 1.5rem;
 					text-transform: uppercase;
 					text-align: right;
-					padding-bottom: 60px;
+					padding-bottom: 80px;
 					color: #e74c3c;
 
 					@include desktop{
@@ -88,14 +90,37 @@
 					line-height: 2rem;
 					color: #fff;
 					padding-left: 40px;
-					font-size: 1.1rem;
+
+					@include tablet{
+						margin-left: 300px;
+					}
+
+
+					
 
 					@include desktop{
 						padding-left: 0px;
+						margin-left:0;
 
 					}
 
 				}
+
+				.left__one{
+
+					@include tablet{
+						margin-left: 0px;
+						margin-right: 300px;
+					}
+
+					@include desktop{
+						margin-right: 0px;
+					}
+				}
+
+
+
+
 				.services__icon{
 					position: absolute;
 					right: 0px;

@@ -1,0 +1,152 @@
+.form{
+
+	@include desktop{
+		width: 1076px;
+		margin: 0 auto;
+		
+	}
+
+		.form__header{
+			padding: 50px 25px 30px 25px;
+
+			h2{
+				font-size: 2rem;
+				text-align: center;
+				padding-bottom: 30px;
+				text-transform: uppercase;
+			}
+			p{
+				
+				text-align: center;
+			}
+			.separator {
+			    width: 10px;
+			    height: 10px;
+			    margin: 20px auto;
+			    background: #e74c3c;
+			    position: relative;
+			    display: block;
+			    border-radius: 50%;
+			}
+			.separator:before {
+			    position: absolute;
+			    right: 5%;
+			    bottom: 4px;
+			    height: 1px;
+			    width: 80px;
+			    background: #eee;
+			    content: "";
+			    display: inline-block;
+			    margin-right: 20px;
+			}
+
+			.separator:after {
+			    position: absolute;
+			    left: 5%;
+			    bottom: 4px;
+			    height: 1px;
+			    width: 80px;
+			    background: #eee;
+			    content: "";
+			    display: inline-block;
+			    margin-left: 20px;
+			}
+
+		}
+
+
+
+	.form__container{
+
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 50px;
+
+		@include desktop{
+			flex-direction: row;
+		}
+
+		.form__information{
+			padding: 0px 25px 50px 25px;
+
+			@include desktop{
+				width: 50%;
+
+			}
+
+			h3{
+				font-size: 1.4rem;
+			    color: #e74e3e;
+			    margin-bottom: 30px;
+			    margin-top: 20px;
+			    text-align: center;
+
+			}
+			p{
+				font-size: 0.9rem;
+				text-align: center;
+
+			}
+
+		}
+
+
+		.form__fill{
+			padding-bottom: 50px;
+
+			@include desktop{
+				margin-top: 20px;
+			}
+
+			form{
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				width: 75%;
+				padding: 0px 50px;
+				margin:0 auto;
+
+				@include tablet{
+					width: 50%;
+				}
+				@include desktop{
+					width: 100%;
+				}
+
+				input{
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+					border: none;
+					outline: none;
+					border-bottom: 1px solid #a7a7a766;
+				}
+				::placeholder{
+					color: #a7a7a7;
+				}
+
+				textarea{
+					padding-bottom: 80px;
+					margin-bottom: 20px;
+					border: none;
+					border-bottom: 1px solid #a7a7a766;
+					outline: none;
+				}
+
+				.submit{
+					background-color: transparent;
+					padding-top: 20px;
+					border: 2px solid #a7a7a766;
+					font-weight: bold;
+					font-size: 1.1rem;	
+					color:#a7a7a7;	
+					cursor: pointer;	
+				}
+			}
+			
+		}
+
+	}
+
+}
+
+
