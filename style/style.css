@@ -437,6 +437,9 @@ html {
   padding-top: 10px;
   animation: anchor 1.6s infinite linear;
 }
+.header .current {
+  background-color: red;
+}
 
 /** VARIABLES
 ===================================*/
@@ -892,7 +895,7 @@ ul.bxslider {
 }
 @media (min-width: 1024px) {
   .services .services__container .services__content .services__content--collumn p {
-    padding-left: 0px;
+    padding-left: 30px;
     margin-left: 0;
   }
 }
@@ -938,6 +941,13 @@ ul.bxslider {
     height: 70px;
     line-height: 70px;
   }
+}
+.services .services__container .services__content .services__content--collumn .more {
+  display: none;
+}
+.services .services__container .services__content .services__content--collumn .showMore {
+  text-decoration: none;
+  color: #e74c3c;
 }
 .services .services__container .services__img {
   width: 100%;
@@ -1114,6 +1124,9 @@ ul.bxslider {
   padding: 0;
   transition: all 0.4s ease-in-out;
   display: none;
+}
+.recentWorks .class {
+  background-color: orange !important;
 }
 
 @media (min-width: 1024px) {

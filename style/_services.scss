@@ -99,7 +99,7 @@
 					
 
 					@include desktop{
-						padding-left: 0px;
+						padding-left: 30px;
 						margin-left:0;
 
 					}
@@ -152,7 +152,16 @@
 
 					}
 
-				}		
+				}	
+
+				.more{
+					display: none;
+				}	
+
+				.showMore{
+					text-decoration: none;
+					color: #e74c3c;
+				}
 
 			}
 		}
